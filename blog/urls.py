@@ -28,6 +28,8 @@ urlpatterns = [
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('master/', include("master.urls"), name='master'),
+    path('post/', include("post.urls"), name='post'),
+
 
 
 ]
