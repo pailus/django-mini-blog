@@ -15,6 +15,7 @@ class Post(models.Model):
     def __str__(self) -> str:
         return self.judul
 
+#str
 
 
 class Comment(models.Model):
