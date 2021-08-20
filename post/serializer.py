@@ -8,7 +8,7 @@ class PostSerializer(serializers.ModelSerializer):
         fields = "__all__"
     def get_user_nama(self, obj):
         if obj:
-            return obj.username
+            return obj.user.username
         return None
 
 class CommentSerializer(serializers.ModelSerializer):
